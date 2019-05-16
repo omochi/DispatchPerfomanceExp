@@ -2,11 +2,12 @@
 import Scripting // @omochi
 
 func main() throws {
-    let command = "swiftc"
+    let command = "swift"
     let args = [
-        "-emit-sil",
+//        "-emit-ir",
 //        "-Xllvm", "-sil-print-all",
-        "-Xllvm", "-sil-print-around=closure-specialize",
+//        "-Xllvm", "-sil-print-around=closure-specialize",
+//        "-Xfrontend", "-disable-llvm-optzns",
         "-O",
         "test.swift"
     ]

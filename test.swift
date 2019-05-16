@@ -40,7 +40,7 @@ func measure(_ f: () -> Void) {
     print(dt)
 }
 
-let N = 500_000_000
+let N = 500_000_000 * 10
 
 @inline(never)
 func testE() {
@@ -65,6 +65,12 @@ func testCE() {
 }
 
 func main() {
+    testE()
+    testCE()
+    testE()
+    testCE()
+    testE()
+    testCE()
     testE()
     testCE()
 }
